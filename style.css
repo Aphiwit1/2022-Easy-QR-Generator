@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+    --blue-light: #42B0FF;
+    --blue-dark: #154993; 
+
+    --red-light: #FF6321;
+    --red-dark: #93170A;
+  }
+
+.qr-code-nav-bar {
+  padding: 1rem;
+  border-bottom: 1px solid #ebebeb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qr-code-nav-bar .website-name {
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.website-name.color-blue {
+    color:var(--blue-dark);
+    border-bottom: 2px solid var(--blue-light);
+}
+.website-name.color-red {
+    color:var(--red-dark);
+    border-bottom: 2px solid var(--red-light);
+}
+.qr-code-nav-bar .website-owner {
+  font-size: 14px;
+  font-weight: 400;
+}
+.github {
+    background-color: #ffffff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.github.color-blue {
+    background-image: linear-gradient(45deg, var(--blue-light), var(--blue-dark));
+}
+.github.color-red {
+    background-image: linear-gradient(45deg, var(--red-light), var(--red-dark));
+}
+
+.body-container {
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  margin: 0px 50px;
+  color:#4a4a4a;
+}
+.heading bold {
+  background-color: #ffffff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.heading bold.color-red {
+    background-image: linear-gradient(45deg, var(--red-light), var(--red-dark));
+}
+.heading bold.color-blue {
+    background-image: linear-gradient(45deg, var(--blue-light), var(--blue-dark));
+}
+.heading span {
+      font-weight: 300;
+  }
+
+.user-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input-container {
+  width: 80%;
+  max-width: 400px;
+}
+.user-input input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--blue-dark); /* Green */
+
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.button.color-blue {
+    background-image: linear-gradient(to right, var(--blue-light), var(--blue-dark));
+}
+.button.color-red {
+    background-image: linear-gradient(to right, var(--red-light), var(--red-dark));
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #42b0ff14;
+  /* margin: 10px; */
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.qr-code img {
+  display: block;
+  margin-bottom: 20px;
+}
+.qr-code button {
+  background-color: #ffffff; /* Green */
+  border: 1px solid var(--blue-dark);
+  color: var(--blue-dark);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.qr-code button a { 
+    text-decoration: none;
+    color: var(--blue-dark);
+}
+.qr-code-text {
+    color: var(--blue-dark);
+    margin-bottom: 10px;
+}
+
+footer {
+    border-top: 1px solid #ebebeb;
+    padding-top: 1rem;
+    font-size: 12px;
+    text-align:center;
+    color: rgb(71, 71, 71);
+}
+
+@media (max-width: 540px) {
+    .qr-code-nav-bar {
+        flex-direction: column;
+    }
+    .website-name {
+        margin-bottom: 10px;
+    }
+    .heading {
+        font-size:20px;
+        margin: 20px;
+    }
+    .body-container {
+        height: 75vh;
+    }
+    .qr-code { 
+        width: 80%;
+        margin: 0 auto;
+    }
+    footer {
+        padding-bottom: 1rem;
+        font-size: 10px;
+    }
+}
+
+

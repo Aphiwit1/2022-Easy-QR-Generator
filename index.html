@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:wght@200;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="qr-code-nav-bar">
+      <div class="website-name color-blue ">EasyQR</div>
+      
+      <div class="website-owner">Created by <span class="github color-blue "><a href="https://github.com/Aphiwit1" target="_blank"rel="noopener">@Aphiwit</a></span></div>
+    </section>
+
+    <div class="body-container">
+        <section class="heading">
+            <h3 class="title"><span>Just Input Your </span><bold class="website-text color-blue">Website </bold><br><span>for </span><bold class="created-qr-text color-blue">Create QR Code</bold></h3>
+          </section>
+
+       
+      
+          <section class="user-input">
+            <div class="input-container">
+                <input
+                type="text"
+                id="input_text"
+                name="input_text"
+                placeholder=""
+                autocomplete="off"
+              />
+            </div>
+      
+            <div>
+                <button class="button color-blue" type="submit" id="submit">Generate QR Code</button>
+            </div>
+         
+        </section>
+
+        <div class="qr-code" style="display: none">
+        </div>
+    </div>
+<!--   
+    <button class="btn-red">Red</button> -->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    😍Made with love in Phatthalung, Thailand
+   
+  </footer>
+</html>
